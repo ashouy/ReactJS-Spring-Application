@@ -1,0 +1,27 @@
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex f77544c..d58cbe9 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -32,3 +32,5 @@[m [mbuild/[m
+ ### VS Code ###[m
+ .vscode/[m
+ .src/main/resources/application.properties[m
+[32m+[m[32m.target/classes/application.properties[m
+[32m+[m[32m.target/node[m
+\ No newline at end of file[m
+[1mdiff --git a/src/main/resources/application.properties b/src/main/resources/application.properties[m
+[1mindex 0421467..0a2e4a0 100644[m
+[1m--- a/src/main/resources/application.properties[m
+[1m+++ b/src/main/resources/application.properties[m
+[36m@@ -9,4 +9,4 @@[m [mspring.database.driverClassName=org.postgresql.Driver[m
+ spring.datasource.url=jdbc:postgresql://localhost:5433/sandbox[m
+ spring.datasource.username=postgres[m
+ spring.datasource.password=admin[m
+[31m-server.port=8080[m
+\ No newline at end of file[m
+[32m+[m[32mserver.port=8080[m[41m [m
+\ No newline at end of file[m
